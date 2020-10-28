@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class</title>
+    <style>
+        /*selector:pseudo-class{
+
+        }*/
+        a:link{/*a linkine tıklanmamişsa*/
+        color:green;
+        }
+        a:hover{/*a linkinin üzerine gelindiğinde*/
+            color: red;
+        }
+        a:visited{/*a linkine tıklanmışsa*/
+        color:black;
+        }
+        a:active{/*a linkine tıklarken*/
+        color:blue;
+        }
+        a{
+            font-size: 24px;
+        }
+        input{
+            font-size:1.5em;
+           padding:10px;
+           border-radius:4px ;
+           border:1px solid black;
+        }
+        input:focus{
+            outline:0;
+            border:2px solid red;
+
+        }
+    </style>
+</head>
+<body>
+<a href="#">This is a link</a>
+<input type="text" placeholder="Name">
+</body>
+</html>

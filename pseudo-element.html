@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Pseudo Element</title>
+    <style>
+        .para1{
+            font-size: 1.5em;
+            letter-spacing:2px;
+            line-height: 1.5em;
+        }
+        .para1::first-line{
+            color:red;
+        }
+        .para1::first-letter{
+            font-size: 50px;
+            color:blue;
+        }
+        .para1::after{
+            content: "Paragraf Sonu";
+            color:red;
+        }
+        .para1::before{
+            content: url("images/google-logo.jpg");
+        }
+    </style>
+</head>
+<body>
+    <p class="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, odio tenetur? Dolore quod voluptates officia beatae laboriosam commodi, soluta adipisci, mollitia ipsa asperiores iste harum? Modi veritatis error optio libero cumque asperiores excepturi repudiandae sequi culpa odit eum labore ut fugit quos nam porro consequatur, quia ipsa itaque nisi sunt ipsam officiis velit at. Laudantium quasi id aperiam soluta quia sequi labore recusandae, odit, atque tempora dolorum repellendus modi iusto neque natus eaque explicabo quas a tenetur, totam qui magnam eos? Vitae dignissimos expedita animi incidunt, atque labore saepe quo provident, quos ad nisi aliquam necessitatibus error vel id laboriosam.</p>
+</body>
+</html>
