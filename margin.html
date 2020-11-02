@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+    <!-- eklenen nesne ile diğer nesneler arası -->
+    <style>
+        *{/*reset css*/
+            margin:0;
+            padding: 0;
+        }
+        div.box-1{
+            margin-left:50px;
+            margin-right: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px; /*altına eklenen 2. paragraf eleman 50px aşağıdan başlayarak eklenir.*/ 
+            /*top right bottom left saat yönünde*/
+            /*margin:50px 20px 50px 20px;*/
+            /*top-bottom,right-left*/
+            /*margin:50px 20px;*/
+            /*margin:0px auto;*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box-1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, eos?</p>
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, placeat.</p>
+    </div>
+</body>
+</html>

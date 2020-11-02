@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Position3</title>
+    <style>
+.outer-box{
+    width:200px;
+    height:200px;
+    background-color: #a7a7a7;
+    position: relative;/* outer-box a göre pozisyon alması için position verilmesi lazım 
+    yoksa body göre pozison alır.Bu pozisyon static olmaz çünkü yazılmazsa zaten defaultu statictir.*/
+    top:200px;
+    left:200px;
+    right:200px;
+}
+.inner-box{
+    width:50px;
+    height:50px;
+    background-color: blue;
+    position:absolute;/*kapsayıcımız outer-box göre pozisyonlandırma*/
+    top:0;
+    left:0;
+}
+span{
+    width:50px;
+    height:50px;
+    display: inline-block;/*span inline eleman olduğu için width ve height vermek için display öz.inline-block*/
+    background-color: red;
+    position:relative;
+    left:75px;/*kendi pozisyonundan 75 px sola git*/
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <span></span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, similique!
+    <div class="outer-box">
+        <div class="inner-box">
+
+        </div>
+    </div>
+</body>
+</html>

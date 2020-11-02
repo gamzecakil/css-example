@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Display</title>
+    <style>
+        .box{
+            width:50%;
+            height: 100px;
+        }
+        .box-1{
+            background:red;
+        }
+        .box-2{
+            background: blue;
+        }
+        #test-link{/*inline oldugu için yine tarayıcının width,height göre çalışır.*/
+        display: inline-block;/*eger display:inline-inline-block verirsem width,height çalışır.*/
+            width:100px;
+            height:100px;;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box box-1"></div>
+    <div class="box box-2"></div> -->
+    <a href="#"  id="test-link">Test Link</a> Deneme Content 
+</body>
+</html>
